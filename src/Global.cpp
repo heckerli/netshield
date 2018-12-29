@@ -1,0 +1,7 @@
+#define GLOBAL_VAR
+#include "Global.h"
+#undef GLOBAL_VAR
+
+Protocol PROTOCOL_HTTP(TLP_TCP, ALP_HTTP);
+Protocol PROTOCOL_DCE_RPC(TLP_TCP, ALP_DCE_RPC);
+Protocol PROTOCOL_DNS(TLP_UDP, ALP_DCE_RPC);
